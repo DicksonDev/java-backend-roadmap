@@ -17,7 +17,7 @@ public class UsoVariables {
         short par_zapatos = 2;
         DecimalFormat df = new DecimalFormat("###.00"); // establecer cantidad de decimales
 
-        System.out.println("Mi estatura es: " + df.format(estatura)  + " es cliente?: " + cliente);
+        System.out.println("Mi estatura es: " + df.format(estatura)  + " es cliente?: " + cliente );
     }
 
 }
