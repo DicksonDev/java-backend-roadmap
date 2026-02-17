@@ -11,7 +11,9 @@ public class Ejercicio1 {
         System.out.println(randomnumber);
         System.out.println("--Adivina el numero--!");
         System.out.println("Ingresa el numero");
+
         while(!iscorrect) {
+            intentos++;
             int entradaUsuario = sc.nextInt();
 
             if (entradaUsuario == randomnumber) {
@@ -21,11 +23,11 @@ public class Ejercicio1 {
             } else if (entradaUsuario > randomnumber) {
                 System.out.println("El numero ingresado es mayor al que tratas de adivinar");
                 System.out.println("Intentalo nuevamente");
-                intentos++;
+
             } else {
                 System.out.println("El numero ingresado es menor al que tratas de adivinar");
                 System.out.println("Intentalo nuevamente");
-                intentos++;
+
 
             }
         }
