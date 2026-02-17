@@ -5,7 +5,7 @@ public class Ejercicio1 {
         Scanner sc = new Scanner(System.in);
         int minvalue = 1;
         int maxvalue = 100;
-        int intentos = 0;
+        int tries = 0;
         int randomnumber = (int)(Math.random() * (maxvalue - minvalue + 1) + minvalue);
         boolean iscorrect = false;
         System.out.println(randomnumber);
@@ -13,12 +13,12 @@ public class Ejercicio1 {
         System.out.println("Ingresa el numero");
 
         while(!iscorrect) {
-            intentos++;
+            tries++;
             int entradaUsuario = sc.nextInt();
 
             if (entradaUsuario == randomnumber) {
                 System.out.println("Adivinaste el numero, Felicidades");
-                System.out.println("El numero de intentos fue de " + intentos);
+                System.out.println("El numero de intentos fue de " + tries);
                 iscorrect = true;
             } else if (entradaUsuario > randomnumber) {
                 System.out.println("El numero ingresado es mayor al que tratas de adivinar");
